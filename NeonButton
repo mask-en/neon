@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+ <html lang="ja">
+  <head>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta charset="utf-8">
+   <meta name="keywords" content="nothing">
+   <link rel="shortcut icon" href="0330248C-2B25-4545-83F7-4F64362CF6CD.jpeg" type="image/jpg">
+   <link rel="apple-touch-icon" href="https://www.kindpng.com/picc/m/114-1146845_png-50-px-logos-png-transparent-png.png" type="image/png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta format-detection="telephone=no">
+   <title>NeonButton</title>
+   <script src="https://code.jquery.com/jquery-3.3.1.js">
+   $(function() {
+
+    $('a').hover(function() {
+      $('.fa').addClass("fa-spin");
+    }, function() {
+      $('.fa').removeClass("fa-spin");
+    });
+
+   });
+   </script>
+   <style>
+    body{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #0E0E0F;
+      font-family: sans-serif;
+    }
+    a{
+      position: relative;
+      display: inline-block;
+      padding: 15px 30px;
+      color: #0BDFC7;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-decoration: none;
+      font-size :24px;
+      overflow: hidden;
+      transition: 0.2s;
+    }
+    a:hover{
+      color: #255784;
+      background-color: #17E7C4;
+      animation-name: boxshadow;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      transition-delay: 1s;
+    }
+    a .box{
+      position: absolute;
+      dispaly: block;
+    }
+    a .box:nth-child(1){
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #17E7C4);
+    }
+    a:hover .box:nth-child(1){
+       left: 100%;
+       transition: 1s;
+    }
+    a .box:nth-child(3){
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, #17E7C4);
+    }
+    a:hover .box:nth-child(3){
+       right: 100%;
+       transition: 1s;
+       transition-delay: 0.5s;
+    }
+    a .box:nth-child(2){
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, #17E7C4);
+    }
+    a:hover .box:nth-child(2){
+       top: 100%;
+       transition: 1s;
+       transition-delay: 0.25s;
+    }
+    a .box:nth-child(4){
+      bottom: -100%;
+      left: 0%;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, #17E7C4);
+    }
+    a:hover .box:nth-child(4){
+       bottom: 100%;
+       transition: 1s;
+       transition-delay: 0.75s;
+    }
+    @keyframes boxshadow{
+      0%{
+        box-shadow: 0 0 10px #17E7C4, 0 0 40px #17E7C4, 0 0 80px #17E7C4;
+      }
+      50%{
+        box-shadow: 0 0 30px #17E7C4, 0 0 60px #17E7C4, 0 0 100px #17E7C4;
+      }
+      100%{
+        box-shadow: 0 0 10px #17E7C4, 0 0 40px #17E7C4, 0 0 80px #17E7C4;
+      }
+    }
+    a:hover .fa{
+      -webkit-animation: fa-spin 2s infinite linear;
+      -moz-animation: fa-spin 2s infinite linear;
+      -o-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear;
+      -moz-animation-delay:1s;
+      -webkit-animation-delay:1s;
+      -o-animation-delay:1s;
+      animation-delay:1s;
+    }
+    h1{
+      margin: 0;
+      padding: 0;
+      font-size: 25px;
+      letter-spacing: 0.05em;
+      color: #1B1B1B;
+    }
+    h1 .letter:nth-child(1){
+      animation-delay: 0s;
+    }
+    h1 .letter:nth-child(2){
+      animation-delay: 0.5s;
+    }
+    h1 .letter:nth-child(3){
+      animation-delay: 1s;
+    }
+    h1 .letter:nth-child(4){
+      animation-delay: 1.5s;
+    }
+    h1 .letter:nth-child(5){
+      animation-delay: 2s;
+    }
+    h1 .letter:nth-child(6){
+      animation-delay: 2.5s;
+    }
+    h1 .letter:nth-child(7){
+      animation-delay: 3s;
+    }
+    h1 .letter:nth-child(8){
+      animation-delay: 3.5s;
+    }
+    h1 .letter:nth-child(9){
+      animation-delay: 4s;
+    }
+    h1 .letter:nth-child(10){
+      animation-delay: 4.5s;
+    }
+    h1 .letter:nth-child(11){
+      animation-delay: 5s;
+    }
+    h1 .letter{
+      margin: 0;
+      padding: 0;
+      display: table-cell;
+      animation: stunning 5.9s linear infinite;
+    }
+    a:hover .letter{
+      animation: none;
+    }
+    @keyframes stunning{
+      0%, 100%{
+        color: #17E7C4;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #17E7C4,
+                     0 0 20px #17E7C4,
+                     0 0 40px #17E7C4,
+                     0 0 80px #17E7C4,
+                     0 0 120px #17E7C4,
+                     0 0 200px #17E7C4,
+                     0 0 300px #17E7C4,
+                     0 0 400px #17E7C4;
+      }
+      10%, 97%{
+        color: #1B1B1B;
+        filter: blur(0px);
+        text-shadow: none;
+      }
+    }
+   </style>
+  </head>
+  <body>
+   <a href="#">
+    <span class="box"></span>
+    <span class="box"></span>
+    <span class="box"></span>
+    <span class="box"></span>
+    <h1>
+     <span class="letter">N</span>
+     <span class="letter">e</span>
+     <span class="letter">o</span>
+     <span class="letter">n</span>
+     <span class="letter"><i class="fa fa-cog"></i></span>
+     <span class="letter">B</span>
+     <span class="letter">u</span>
+     <span class="letter">t</span>
+     <span class="letter">t</span>
+     <span class="letter">o</span>
+     <span class="letter">n</span>
+    </h1>
+   </a>
+  </body>
+ </html>
